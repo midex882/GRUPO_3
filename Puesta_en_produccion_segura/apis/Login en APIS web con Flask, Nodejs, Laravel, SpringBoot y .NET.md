@@ -44,23 +44,7 @@ def login():
 	}
 ```
 **Laravel**
-```php
-	  public function login(Request $request)
-    {
-        // Lee credenciales enviadas
-        $user = (string) $request->input('user');
-        $pass = (string) $request->input('pass');
-
-        $cfgUser = config('authsimple.user', env('API_USER', 'admin'));
-        $cfgPass = config('authsimple.pass', env('API_PASS', 'secret'));
-
-        if ($user === $cfgUser && $pass === $cfgPass) {
-            return response()->json(['message' => 'OK'], 200);
-        }
-
-        return response()->json(['message' => 'Invalid credentials'], 401);
-    }
-```
+https://github.com/IES-Rafael-Alberti/25-26-ciberseguridad-grupo-3/blob/423a886b0231a9f9b4077dffe9bce5f526a52152/Puesta_en_produccion_segura/apis/LaravelAPI/app/Http/Middleware/SimpleAuth.php#L1-L32
 **Spring Boot**
 ```Java
 	@PostMapping("/login")
@@ -85,4 +69,6 @@ def login():
 		return Results.Ok("Credenciales incorrectas");
 	});
 ```
+
+
 
