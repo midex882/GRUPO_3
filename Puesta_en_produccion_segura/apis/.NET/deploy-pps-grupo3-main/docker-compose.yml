@@ -1,0 +1,27 @@
+
+services:
+  # PHP - Laravel API
+  laravel-api:
+    build: ./laravel-api
+    container_name: laravel-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./laravel-api:/var/www
+    networks:
+      - api-net
+
+  # .NET API
+  dotnet-api:
+    build: ./dotnet-api
+    container_name: dotnet-api
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./dotnet-api:/app
+    networks:
+      - api-net
+
+networks:
+  api-net:
+    driver: bridge

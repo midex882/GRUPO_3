@@ -1,0 +1,69 @@
+# =========================================================
+# Global .gitignore for Laravel + .NET APIs
+# =========================================================
+
+# -------------------------------
+# Docker
+# -------------------------------
+*.log
+*.pid
+*.seed
+*.pid.lock
+.docker
+.dockerignore
+docker-compose.override.yml
+**/Dockerfile.old
+**/Dockerfile~
+
+# Docker build artifacts
+**/tmp/
+**/dist/
+**/build/
+**/cache/
+
+# -------------------------------
+# PHP (Laravel)
+# -------------------------------
+laravel-api/vendor/
+laravel-api/node_modules/
+laravel-api/storage/
+laravel-api/bootstrap/cache/
+laravel-api/.env
+laravel-api/.env.local
+laravel-api/.env.backup
+laravel-api/.env.production
+
+# -------------------------------
+# .NET (C#)
+# -------------------------------
+dotnet-api/bin/
+dotnet-api/obj/
+dotnet-api/.vs/
+dotnet-api/.vscode/
+dotnet-api/.idea/
+dotnet-api/.user
+dotnet-api/.env
+dotnet-api/*.pdb
+dotnet-api/*.cache
+dotnet-api/*.db
+
+# -------------------------------
+# IDE / OS
+# -------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -------------------------------
+# Misc / backups / zips
+# -------------------------------
+*.bak
+*.tmp
+*.swp
+*.orig
+*.old
+*.zip
+*.tar
+*.gz
