@@ -1,5 +1,13 @@
-Route::get('items', 'ItemController@index');       // List all items
-Route::get('items/{id}', 'ItemController@show');   // Show specific item by id
-Route::post('items', 'ItemController@store');      // Create new item
-Route::put('items/{id}', 'ItemController@update'); // Update item by id
-Route::delete('items/{id}', 'ItemController@destroy'); // Delete item by id
+<?php
+Route::middleware(['simple.auth'])->group(function () {
+    Route::get('','NameController@saludo');
+    Route::get('names', 'NameController@index');       // List all names
+    Route::get('names/{id}', 'NameController@show');   // Show specific Name by id
+    Route::post('names', 'NameController@store');      // Create new Name
+    Route::put('names/{id}', 'NameController@update'); // Update Name by id
+    Route::delete('names/{id}', 'NameController@destroy'); // Delete Name by id
+});
+
+
+
+?>

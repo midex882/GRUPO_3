@@ -1,0 +1,102 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "Agua mineral 500ml",
+    "Precio": 1.20
+  },
+  {
+    "Id": 2,
+    "Nombre": "Caf\u00E9 solo",
+    "Precio": 1.50
+  },
+  {
+    "Id": 3,
+    "Nombre": "Caf\u00E9 con leche",
+    "Precio": 1.80
+  },
+  {
+    "Id": 4,
+    "Nombre": "Tostada con tomate",
+    "Precio": 2.50
+  },
+  {
+    "Id": 5,
+    "Nombre": "Croissant de mantequilla",
+    "Precio": 1.90
+  },
+  {
+    "Id": 6,
+    "Nombre": "Zumo de naranja natural",
+    "Precio": 2.80
+  },
+  {
+    "Id": 7,
+    "Nombre": "Cerveza 33cl",
+    "Precio": 2.20
+  },
+  {
+    "Id": 8,
+    "Nombre": "Refresco cola",
+    "Precio": 2.10
+  },
+  {
+    "Id": 9,
+    "Nombre": "Refresco lim\u00F3n",
+    "Precio": 2.10
+  },
+  {
+    "Id": 10,
+    "Nombre": "Agua con gas",
+    "Precio": 1.50
+  },
+  {
+    "Id": 11,
+    "Nombre": "Hamburguesa cl\u00E1sica",
+    "Precio": 8.50
+  },
+  {
+    "Id": 12,
+    "Nombre": "Hamburguesa doble",
+    "Precio": 10.00
+  },
+  {
+    "Id": 13,
+    "Nombre": "Ensalada mixta",
+    "Precio": 6.80
+  },
+  {
+    "Id": 14,
+    "Nombre": "Paella de marisco",
+    "Precio": 12.50
+  },
+  {
+    "Id": 15,
+    "Nombre": "Pasta bolo\u00F1esa",
+    "Precio": 9.00
+  },
+  {
+    "Id": 16,
+    "Nombre": "Pizza margarita",
+    "Precio": 8.00
+  },
+  {
+    "Id": 17,
+    "Nombre": "Pizza barbacoa",
+    "Precio": 9.50
+  },
+  {
+    "Id": 18,
+    "Nombre": "Postre casero",
+    "Precio": 3.20
+  },
+  {
+    "Id": 19,
+    "Nombre": "Copa de vino tinto",
+    "Precio": 2.80
+  },
+  {
+    "Id": 20,
+    "Nombre": "Copa de vino blanco",
+    "Precio": 2.80
+  }
+]
