@@ -1,13 +1,15 @@
 <?php
-Route::middleware(['simple.auth'])->group(function () {
-    Route::get('','NameController@saludo');
-    Route::get('names', 'NameController@index');       // List all names
-    Route::get('names/{id}', 'NameController@show');   // Show specific Name by id
-    Route::post('names', 'NameController@store');      // Create new Name
-    Route::put('names/{id}', 'NameController@update'); // Update Name by id
-    Route::delete('names/{id}', 'NameController@destroy'); // Delete Name by id
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\NameController;
+
+
+Route::middleware(['oauth.validate'])->group(function () {
+    Route::get('names', [NameController::class, 'index']);
+    Route::get('names/{id}', [NameController::class, 'show']);
+    Route::post('names', [NameController::class, 'store']);
+    Route::put('names/{id}', [NameController::class, 'update']);
+    Route::delete('names/{id}', [NameController::class, 'destroy']);
 });
 
-
-
-?>

@@ -15,7 +15,14 @@ return Application::configure(basePath: dirname(__DIR__))
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
-    })->withMiddleware(function (Middleware $middleware) {
+    })
+    ->withMiddleware(function (Middleware $middleware) {
     $middleware->alias([
         'simple.auth' => \App\Http\Middleware\SimpleAuth::class,
-    ]);})->create();
+    ]);})
+    ->withMiddleware(function (Middleware $middleware) {
+        $middleware->alias([
+            'oauth.validate' => \App\Http\Middleware\ValidateOAuthToken::class,
+        ]);
+    })
+    ->create();
